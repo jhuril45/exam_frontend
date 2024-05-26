@@ -49,7 +49,7 @@ import Modal from '~/components/Modal.vue';
 export default {
   name: 'IndexPage',
   componenets: {
-
+    Modal
   },
   data() {
     return {
