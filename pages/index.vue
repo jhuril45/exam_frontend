@@ -256,7 +256,7 @@ tr:nth-child(even) {
   width: 350px;
 
   input {
-    margin-top: 15px;
+    margin-bottom: 15px;
     color: white;
     padding: 5px;
     width: 100%;
