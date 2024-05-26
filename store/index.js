@@ -35,10 +35,13 @@ export const actions = {
 
       const { data } = response.data;
       const login = JSON.parse(data.login)
-      localStorage.setItem('token', login.token);
+      console.log('login', login)
+      if (login.user) {
+        localStorage.setItem('token', login.token);
+        commit('setUser', login.user);
+      }
 
-      commit('setUser', login.user);
-      return login.user;
+      return login;
     } catch (e) {
 
     }

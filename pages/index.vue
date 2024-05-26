@@ -31,8 +31,8 @@
         <h1>{{ form.id ? 'Edit Task' : 'Create Task' }}</h1>
         <div class="task-form">
           <form @submit.prevent="form.id ? updateTask() : createTask()">
-            <input type="text" v-model="form.title" placeholder="Title"/>
-            <input type="text" v-model="form.description" placeholder="Description"/>
+            <input type="text" v-model="form.title" placeholder="Title" required/>
+            <input type="text" v-model="form.description" placeholder="Description" required/>
             <button type="submit" class="submit-btn">Submit</button>
           </form>
 
